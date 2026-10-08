@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Souffle · Jeu de bulle pour iPhone · Bubble game for iPhone</title>
+<meta name="description" content="Souffle : garde le doigt immobile, ta bulle gonfle. Plus grosse, plus de points… plus fragile. Un pouce, hors ligne, sans compte.">
+<style>
+  :root { --ink: #0B1311; --surface: #142019; --sep: #243429; --text: #EEF5F0; --text2: #9DB1A6; --mint: #8CEBC6; }
+  * { box-sizing: border-box; }
+  html { background: var(--ink); }
+  body { margin: 0; color: var(--text); background: radial-gradient(120% 60% at 50% 0%, #13282A 0%, var(--ink) 70%) no-repeat, var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-text-size-adjust: 100%; min-height: 100vh; }
+  main { max-width: 40rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  a { color: var(--mint); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--mint); outline-offset: 2px; border-radius: 4px; }
+  header.top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .brand { font-weight: 700; letter-spacing: .36em; font-size: .8rem; color: var(--text2); }
+  nav.lang a { margin-left: .75rem; font-size: .95rem; }
+  .hero { text-align: center; padding: 3rem 0 1rem; }
+  .bubble { width: 140px; height: 140px; margin: 0 auto 2rem; border-radius: 50%;
+    background: radial-gradient(circle at 34% 30%, rgba(255,255,255,.85) 0 6%, rgba(255,255,255,0) 18%), radial-gradient(circle at 50% 55%, rgba(143,211,255,.10), rgba(127,224,214,.35) 62%, rgba(184,227,138,.55) 80%, rgba(255,196,107,.7) 100%);
+    box-shadow: 0 0 60px rgba(140,235,198,.18), inset 0 0 0 2px rgba(238,245,240,.35); }
+  h1 { font-size: 2.6rem; line-height: 1.1; margin: 0; letter-spacing: .02em; }
+  .tag { font-size: 1.3rem; color: var(--text); margin: .75rem 0 0; }
+  .sub { color: var(--text2); margin: .5rem 0 0; }
+  .store { display: inline-block; margin-top: 2rem; padding: .85rem 1.6rem; border-radius: 999px; background: var(--mint); color: var(--ink); font-weight: 700; text-decoration: none; }
+  .rules { list-style: none; padding: 0; margin: 2.5rem 0; display: grid; gap: .75rem; }
+  .rules li { background: var(--surface); border: 1px solid rgba(238,245,240,.08); border-radius: 20px; padding: .9rem 1.2rem; }
+  .rules strong { color: var(--mint); }
+  section + section { border-top: 1px solid var(--sep); margin-top: 3rem; }
+  footer { color: var(--text2); font-size: .9rem; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--sep); }
+  footer a { margin-right: 1rem; }
+  body:has(#en:target) #fr, body:has(#fr:target) #en { display: none; }
+  body:has(#en:target) #en, body:has(#fr:target) #fr { border-top: 0; margin-top: 0; }
+</style>
+</head>
+<body>
+<main>
+
+<section id="fr" lang="fr">
+  <header class="top">
+    <span class="brand">SOUFFLE</span>
+    <nav class="lang" aria-label="Langue"><a href="#fr" aria-current="true">Français</a><a href="#en" lang="en">English</a></nav>
+  </header>
+  <div class="hero">
+    <div class="bubble" role="img" aria-label="Une bulle"></div>
+    <h1>Souffle</h1>
+    <p class="tag">Plus grosse, plus de points… plus fragile.</p>
+    <p class="sub">Un jeu d’adresse à une main pour iPhone.</p>
+    <a class="store" href="https://apps.apple.com/app/id6820444562">Télécharger sur l’App Store</a>
+  </div>
+  <ul class="rules">
+    <li><strong>Doigt immobile</strong>&nbsp;: ta bulle gonfle et marque plus de points.</li>
+    <li><strong>Glisse</strong>&nbsp;: elle se faufile entre les branches, et perd un peu d’air.</li>
+    <li><strong>Lève le doigt</strong>&nbsp;: elle dégonfle. Un contact, et elle éclate.</li>
+  </ul>
+  <p>Gratuit, sans compte, tout se joue hors ligne&nbsp;: cette version ne collecte aucune donnée.</p>
+  <footer>
+    <a href="support.html#fr">Assistance</a><a href="privacy.html#fr">Confidentialité</a>
+    <p>© 2026 Kubilay Kilic</p>
+  </footer>
+</section>
+
+<section id="en" lang="en">
+  <header class="top">
+    <span class="brand">SOUFFLE</span>
+    <nav class="lang" aria-label="Language"><a href="#fr" lang="fr">Français</a><a href="#en" aria-current="true">English</a></nav>
+  </header>
+  <div class="hero">
+    <div class="bubble" role="img" aria-label="A bubble"></div>
+    <h1>Souffle</h1>
+    <p class="tag">Bigger bubble, bigger score, bigger risk.</p>
+    <p class="sub">A one-thumb skill game for iPhone.</p>
+    <a class="store" href="https://apps.apple.com/app/id6820444562">Download on the App Store</a>
+  </div>
+  <ul class="rules">
+    <li><strong>Keep still</strong>: your bubble grows and scores more points.</li>
+    <li><strong>Slide</strong>: it slips between the branches, and loses a little air.</li>
+    <li><strong>Lift your finger</strong>: it shrinks. One touch, and it pops.</li>
+  </ul>
+  <p>Free, no account, everything works offline: this version collects no data.</p>
+  <footer>
+    <a href="support.html#en">Support</a><a href="privacy.html#en">Privacy</a>
+    <p>© 2026 Kubilay Kilic</p>
+  </footer>
+</section>
+
+</main>
+</body>
+</html>
